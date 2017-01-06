@@ -1,0 +1,38 @@
+.site-featured {
+  background-color: #f8f8f8;
+
+  .container {
+    display: flex;
+
+    > div, article {
+      flex-grow: 1;
+      width: 50%;
+      padding: 0 30px;
+    }
+  }
+
+  &__media {
+    position: relative;
+
+    > iframe {
+      @include center();
+      width: calc(100% - 60px);
+      height: 100%;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    line-height: 1em;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-style: italic;
+    color: #f9a90e;
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+}

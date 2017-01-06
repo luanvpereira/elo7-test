@@ -23,6 +23,17 @@ h6 {
   margin: 0 auto;
 }
 
-.body {
-  overflow-y: hidden;
+body {
+  overflow-x: hidden;
+}
+
+p {
+  color: #555;
+  line-height: 1.6em;
+}
+
+.no-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

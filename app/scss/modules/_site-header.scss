@@ -2,6 +2,8 @@
   margin-left: -15px;
   margin-right: -15px;
 
+  padding-bottom: 48px;
+
   &__hero {
     width: 100%;
     display: block;
@@ -37,10 +39,8 @@
   margin-top: 30px;
 
   &__text {
-    color: #555;
-    line-height: 1.6em;
-    max-width: 92%;
     text-align: center;
+    max-width: 92%;
     margin: 0 auto;
   }
 }

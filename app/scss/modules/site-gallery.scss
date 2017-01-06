@@ -1,0 +1,40 @@
+.site-gallery {
+  padding: 50px 30px 0;
+
+  &__list {
+    @extend .no-bullets;
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    @media only screen and (min-width: 960px) {
+      width: inherit;
+      margin-bottom: 0;
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
