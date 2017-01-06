@@ -17,7 +17,7 @@ module.exports = {
 
   output: {
     path: BUILD_DIR,
-    publicPath: 'http://127.0.0.1:8080',
+    // publicPath: 'http://127.0.0.1:8080',
     filename: '[name].js'
   },
 
@@ -43,7 +43,9 @@ module.exports = {
       {
         test: /\.html$/,
         loaders: [
-          'file?name=[name].[ext]'
+          'file?name=[name].[ext]',
+          'extract',
+          'html'
         ]
       }
     ]
