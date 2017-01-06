@@ -43,4 +43,8 @@ p {
   height: auto;
   margin: 0 auto;
   display: block;
+
+  &--margin-top {
+    margin-top: 48px;
+  }
 }
