@@ -1,0 +1,38 @@
+.site-readmore {
+  &, &:link, &:visited {
+    text-transform: uppercase;
+    font-family: 'Open sans';
+    color: #359c9c;
+    text-decoration: none;
+    font-weight: 700;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 10px;
+    margin-top: 60px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:after {
+    @include respimgicon('../img/read-more-icon.png', 9px, 9px);
+    @include centerY();
+    right: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+
+    width: calc(180% + 10px);
+    max-width: 190px;
+    
+    height: 2px;
+    background-color: #cbcbcb;
+
+    @include centerX();
+    top: -22px;
+  }
+}

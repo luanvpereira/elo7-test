@@ -1,0 +1,40 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin respimgicon($url, $width, $height) {
+  content: '';
+  display: inline-block;
+  font-size: 0;
+
+  width: $width;
+  height: $height;
+
+  background: transparent url($url) no-repeat center;
+
+  background-size: $width $height;
+}
+
+@mixin centerY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin centerX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
