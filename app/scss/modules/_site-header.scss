@@ -32,3 +32,15 @@
     }
   }
 }
+
+.site-intro {
+  margin-top: 30px;
+
+  &__text {
+    color: #555;
+    line-height: 1.6em;
+    max-width: 92%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
