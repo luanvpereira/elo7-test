@@ -1,0 +1,31 @@
+{
+  "name": "elo7-test",
+  "version": "1.0.0",
+  "description": "elo7-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanvpereira/elo7-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanvpereira/elo7-test/issues"
+  },
+  "homepage": "https://github.com/luanvpereira/elo7-test#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.1.1",
+    "open-browser-webpack-plugin": "0.0.3",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-notifier": "^1.5.0"
+  }
+}
