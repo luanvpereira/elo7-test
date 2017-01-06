@@ -3,11 +3,24 @@
 
   .container {
     display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     > div, article {
-      flex-grow: 1;
-      width: 50%;
-      padding: 0 30px;
+
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+
+        flex-grow: 1;
+
+        width: 50%;
+        padding: 0 30px;
+      }
+
     }
   }
 
@@ -15,9 +28,13 @@
     position: relative;
 
     > iframe {
-      @include center();
-      width: calc(100% - 60px);
-      height: 100%;
+      margin-bottom: 40px;
+
+      @media only screen and (min-width: 768px) {
+        @include center();
+        width: calc(100% - 60px);
+        height: 100%;
+      }
     }
   }
 
