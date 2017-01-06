@@ -15,6 +15,64 @@
     }
   }
 
+  &__image-holder {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transform: scale(1);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      > a {
+        opacity: 1;
+      }
+
+      .site-gallery__name {
+        opacity: 1;
+      }
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+
+    > a {
+      background-color: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100%;
+      @include center();
+
+      @media only screen and (min-width: 768px) {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    line-height: 1;
+
+    @include center();
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+
+    @media only screen and (min-width: 768px) {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
   &__item {
     margin-bottom: 20px;
 
